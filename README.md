@@ -6,14 +6,16 @@ Poke Poke Poke
 
 ## poking a troublesome connection
 ```
+# compile
 javac TestConnection.java
 
+# run
 java TestConnection "https://google.com"
 
 # to troubleshoot Hanshake, connection
 java -Djavax.net.debug=all TestConnection "https://google.com"
 
-#specific protocol
+# specific protocol
 java -Dhttps.protocols=TLSv1.2,TLSv1.1,TLSv1  -Djavax.net.debug=all "https://google.com"
 ```
 
