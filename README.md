@@ -43,4 +43,6 @@ java  -Djavax.net.debug=all -cp TestConnection.jar TestConnection "https://googl
 openssl s_client -showcerts -connect google.com:443
 
 curl -vvL -k "https://google.com"
+
+keytool -v -list -keystore ~/.sdkman/candidates/java/11.0.11.hs-adpt/lib/security/cacerts
 ```
