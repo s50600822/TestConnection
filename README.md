@@ -12,7 +12,7 @@ javac TestConnection.java
 # run
 java TestConnection "https://google.com"
 
-# to troubleshoot Hanshake, connection
+# to troubleshoot Handshake, connection
 java -Djavax.net.debug=all TestConnection "https://google.com"
 
 # specific protocol
